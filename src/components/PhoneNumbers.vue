@@ -1,7 +1,7 @@
 <template>
   <div id="phones">
     <h3>{{ msg }}</h3>
-    <ComponentA/>
+    <component-a/>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ props: {
   }
 },
 components: {
-  ComponentA
+  'component-a': ComponentA
 }
 };
 
