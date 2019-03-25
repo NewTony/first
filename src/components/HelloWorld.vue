@@ -4,10 +4,10 @@
     <p>
       {{head}}
     </p>
-    <div v-for="menu in menus">
+    <div v-for="menu in menus" :key="menu.headline">
       <h3>{{ menu.headline }}</h3>
       <ul>
-        <li v-for="link in menu.links"><a :href="link.href">{{ link.text }}</a></li>
+        <li v-for="link in menu.links" :key="link.text"><a :href="link.href">{{ link.text }}</a></li>
       </ul>
     </div>
   </div>
