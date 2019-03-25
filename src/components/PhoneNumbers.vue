@@ -1,28 +1,32 @@
 <template>
   <div id="phones">
     <h3>{{ msg }}</h3>
+    <ComponentA/>
   </div>
 </template>
 
 <script>
 
+import ComponentA from './items/ComponentA.vue'
 
- export default {
-  name: 'PhoneNumbers',
-  data: function() {
-    return {
+export default {
+name: 'PhoneNumbers',
+data: function() {
+  return {
 
-      }
-    },
-  props: {
-    msg: {
-      type: String,
-      default: 'Телефонный справочник'
     }
   },
-  components: {
+props: {
+  msg: {
+    type: String,
+    default: 'Телефонный справочник'
   }
- };
+},
+components: {
+  ComponentA
+}
+};
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
