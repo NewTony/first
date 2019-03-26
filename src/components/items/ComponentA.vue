@@ -1,7 +1,5 @@
 <template>
-<div id="phones">
-  <p>{{msg}}</p>
-</div>
+<li>{{ todo.text }}</li>
 </template>
 
 <script>
@@ -13,12 +11,28 @@ data: function() {
     }
   },
 props: {
-  msg: {
+  msg:
+  {
     type: String,
     default: 'Компонент А'
-  }
+  },
+  todo: {}
 },
-components: {
+components:
+{
+
+},
+data: function() {
+  return {
+
+  }
 }
 }
 </script>
+
+<style scoped>
+  li {
+    display: block;
+    margin: 0 10px;
+  }
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div id="phones">
     <h3>{{ msg }}</h3>
-    <component-a/>
+    <ol><component-a v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></component-a></ol>
   </div>
 </template>
 
@@ -13,7 +13,11 @@ export default {
 name: 'PhoneNumbers',
 data: function() {
   return {
-
+    groceryList: [
+        { id: 0, text: 'Овощи' },
+        { id: 1, text: 'Сыр' },
+        { id: 2, text: 'Что там ещё люди едят?' }
+      ]
     }
   },
 props: {
