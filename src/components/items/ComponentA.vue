@@ -20,12 +20,6 @@ props: {
 },
 components:
 {
-
-},
-data: function() {
-  return {
-
-  }
 }
 }
 </script>
