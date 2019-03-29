@@ -1,0 +1,23 @@
+{
+	"OrgName": "'Name of the organization'",
+	"SeparateDivision": {
+		"Name": "'The name of the separate division'",
+		"Adress": "'Address of a separate division'",
+		"SubDivision": {
+			"Name": "'Division name'",
+			"Floor": "1",
+			"CabinetNumber": "001"
+		},
+	},
+	"Employee": {
+		"Person": {
+			"FirstName": "'FirstName'",
+			"LastName": "'LastName'",
+			"MiddleName": "'MiddleName'"
+		},
+		"Post": "'Job title'",
+		"InPhoneNumber": "'Internal phone number'",
+		"ExtPhoneNumber": "'External phone number'",
+		"Email": "'example@email.com'"
+	}
+}
