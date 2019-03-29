@@ -5,7 +5,7 @@
 		"Adress": "'Address of a separate division'",
 		"SubDivision": {
 			"Name": "'Division name'",
-			"Floor": 1,
+			"Floor": "1",
 			"CabinetNumber": "001"
 		},
 	},
